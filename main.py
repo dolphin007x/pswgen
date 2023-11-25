@@ -37,4 +37,6 @@ def generate_password(n=12):
     return psw
 
 
-print(generate_password(n=15))
+length = int(input("What length do you want your password to be?  "))
+
+print(f"Your password is \n\n{generate_password(length)}\n\n")
