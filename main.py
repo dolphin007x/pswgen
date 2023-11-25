@@ -3,13 +3,14 @@ import random
 
 def generate_random():
 
+    # ambiguous letters, characters and numbers have been excluded for ease of use
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l',
-               'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']  # 'i' & 'o' has been removed (stop confusion)
+               'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
     characters = ['!', '@', '#', '$', '%', '^', '&', '*',
                   '(', ')', '_', '+', '-', '=', '{', '}', '[', ']', '|', ':', '<', '>', ',', '.', '?', '~', '<', '>', '/', '?', '[', ']', '{', '}']
 
-    numbers = [2, 3, 4, 5, 6, 7, 8, 9]  # 2 has been removed
+    numbers = [2, 3, 4, 5, 6, 7, 8, 9]  
 
     random_letter = random.choice(letters)
     random_character = random.choice(characters)
